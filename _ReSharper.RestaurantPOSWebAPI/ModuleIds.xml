@@ -1,0 +1,6 @@
+<Modules>
+  <Module PersistentId="6BE661AC-B938-49B4-BC11-B8800498EF54" ModuleId="Restaurant.Web" />
+  <Module PersistentId="34531CCC-0C52-4706-AB8E-4F299E1687F2" ModuleId="Restaurant.Repository" />
+  <Module PersistentId="A9901576-4995-4D3B-A746-47E7A11E61DE" ModuleId="Restaurant.DataModel" />
+  <Module PersistentId="0AD7A834-F295-441D-9D60-C6043312A0B2" ModuleId="Restaurant.Model" />
+</Modules>

@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Rest" Class="ResturantDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=localhost\mssqlserver1;Initial Catalog=Rest;Integrated Security=True" SettingsObjectName="Restaurant.DataModel.Properties.Settings" SettingsPropertyName="ResturantConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Category" Member="Categories">
+    <Type Name="Category">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CategoryName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CategoryID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Menu" Member="Menus">
+    <Type Name="Menu">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MenuName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ShortDescription" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Price" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="CategoryID" Member="CategoryId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CompletionMode" Member="CompletionModes">
+    <Type Name="CompletionMode">
+      <Column Name="CompletionModeId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="CompletionMode_Order" Member="Orders" ThisKey="CompletionModeId" OtherKey="CompletionModeId" Type="Order" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[Order]" Member="Orders">
+    <Type Name="Order">
+      <Column Name="OrderId" AutoSync="Never" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PaymentMethodId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CompletionModeId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DiscountCodeId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DiscountAmount" Type="System.Decimal" DbType="Decimal(18,10)" CanBeNull="true" />
+      <Column Name="TotalFullPrice" Type="System.Decimal" DbType="Decimal(18,10) NOT NULL" CanBeNull="false" />
+      <Column Name="DiscountedFullPrice" Type="System.Decimal" DbType="Decimal(18,10) NOT NULL" CanBeNull="false" />
+      <Column Name="OrderDateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="false" />
+      <Column Name="EstimatedCompletionDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="true" />
+      <Association Name="Order_OrderMenu" Member="OrderMenus" ThisKey="OrderId" OtherKey="OrderId" Type="OrderMenu" />
+      <Association Name="CompletionMode_Order" Member="CompletionMode" ThisKey="CompletionModeId" OtherKey="CompletionModeId" Type="CompletionMode" IsForeignKey="true" />
+      <Association Name="PaymentMethod_Order" Member="PaymentMethod" ThisKey="PaymentMethodId" OtherKey="PaymentMethodId" Type="PaymentMethod" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PaymentMethod" Member="PaymentMethods">
+    <Type Name="PaymentMethod">
+      <Column Name="PaymentMethodId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="PaymentMethod_Order" Member="Orders" ThisKey="PaymentMethodId" OtherKey="PaymentMethodId" Type="Order" />
+    </Type>
+  </Table>
+  <Table Name="dbo.OrderMenu" Member="OrderMenus">
+    <Type Name="OrderMenu">
+      <Column Name="OrderMenuId" AutoSync="Never" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MenuId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Quantity" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="OrderId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Order_OrderMenu" Member="Order" ThisKey="OrderId" OtherKey="OrderId" Type="Order" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UserProfile" Member="UserProfiles">
+    <Type Name="UserProfile">
+      <Column Name="UserId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AddressLine1" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="AddressLine2" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="AddressLine3" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Postcode" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="PhoneNumber" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="IsRegistered" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Discount" Member="Discounts">
+    <Type Name="Discount">
+      <Column Name="DiscountCodeId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DiscountName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DiscountThreshold" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DiscountPercentage" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

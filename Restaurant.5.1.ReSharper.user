@@ -1,0 +1,86 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="0AD7A834-F295-441D-9D60-C6043312A0B2/d:Order/f:OrderMenu.cs" caret="1040" fromTop="33" />
+      <File id="34531CCC-0C52-4706-AB8E-4F299E1687F2/d:Masters/f:Menu.cs" caret="902" fromTop="33" />
+      <File id="34531CCC-0C52-4706-AB8E-4F299E1687F2/d:Masters/f:Category.cs" caret="777" fromTop="29" />
+      <File id="34531CCC-0C52-4706-AB8E-4F299E1687F2/d:Masters/f:UserProfile.cs" caret="989" fromTop="32" />
+      <File id="34531CCC-0C52-4706-AB8E-4F299E1687F2/d:Masters/f:OrderMenu.cs" caret="0" fromTop="0" />
+      <File id="34531CCC-0C52-4706-AB8E-4F299E1687F2/d:Masters/f:Order.cs" caret="0" fromTop="0" />
+      <File id="0AD7A834-F295-441D-9D60-C6043312A0B2/d:Order/f:Order.cs" caret="1166" fromTop="33" />
+      <File id="6BE661AC-B938-49B4-BC11-B8800498EF54/d:Views/d:Home/f:Index.aspx" caret="1510" fromTop="23" />
+      <File id="6BE661AC-B938-49B4-BC11-B8800498EF54/d:App_Start/f:RouteConfig.cs" caret="894" fromTop="25" />
+      <File id="6BE661AC-B938-49B4-BC11-B8800498EF54/d:Models/f:HomeModel.cs" caret="327" fromTop="14" />
+      <File id="6BE661AC-B938-49B4-BC11-B8800498EF54/f:Global.asax" caret="103" fromTop="1" />
+      <File id="6BE661AC-B938-49B4-BC11-B8800498EF54/d:Controllers/f:HomeController.cs" caret="1120" fromTop="43" />
+      <File id="6BE661AC-B938-49B4-BC11-B8800498EF54/f:Global.asax.cs" caret="817" fromTop="24" />
+      <File id="6BE661AC-B938-49B4-BC11-B8800498EF54/d:Views/d:Home/f:Contact.aspx" caret="1285" fromTop="15" />
+      <File id="6BE661AC-B938-49B4-BC11-B8800498EF54/d:Content/f:jquery.mobile-1.1.1.css" caret="54486" fromTop="37" />
+      <File id="6BE661AC-B938-49B4-BC11-B8800498EF54/d:Content/f:Site.css" caret="11180" fromTop="32" />
+      <File id="6BE661AC-B938-49B4-BC11-B8800498EF54/d:Views/d:Home/f:SpecialOffers.aspx" caret="0" fromTop="0" />
+      <File id="6BE661AC-B938-49B4-BC11-B8800498EF54/d:Views/d:Home/f:Gallery.aspx" caret="2966" fromTop="50" />
+      <File id="6BE661AC-B938-49B4-BC11-B8800498EF54/d:Views/d:Shared/f:Site.Master" caret="2158" fromTop="42" />
+      <File id="d:Miscellaneous Files/f:ContactUs.html/l:C!?Personal?mCube?ContactUs.html" caret="3278" fromTop="49" />
+      <File id="d:Miscellaneous Files/f:Tenants.html/l:C!?Personal?mCube?Tenants.html" caret="3645" fromTop="64" />
+      <File id="d:Miscellaneous Files/f:about.html/l:C!?Personal?mCube?about.html" caret="2843" fromTop="50" />
+      <File id="A9901576-4995-4D3B-A746-47E7A11E61DE/d:Properties/f:Settings.Designer.cs" caret="1584" fromTop="17" />
+      <File id="A9901576-4995-4D3B-A746-47E7A11E61DE/f:Restaurant.dbml" caret="1603" fromTop="19" />
+      <File id="A9901576-4995-4D3B-A746-47E7A11E61DE/d:Properties/f:Settings.settings" caret="627" fromTop="7" />
+      <File id="A9901576-4995-4D3B-A746-47E7A11E61DE/f:app.config" caret="763" fromTop="12" />
+      <File id="6BE661AC-B938-49B4-BC11-B8800498EF54/f:Web.config" caret="1174" fromTop="19" />
+      <File id="d:Miscellaneous Files/f:Landlords.html/l:C!?Personal?mCube?Landlords.html" caret="960" fromTop="18" />
+      <File id="d:Miscellaneous Files/f:styles.css/l:C!?Personal?mCube?css?styles.css" caret="2122" fromTop="33" />
+      <File id="6BE661AC-B938-49B4-BC11-B8800498EF54/d:Views/d:Home/f:Menu.aspx" caret="6817" fromTop="35" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="d:Miscellaneous Files/f:ContactUs.html/l:C!?Personal?mCube?ContactUs.html" caret="3278" fromTop="49" />
+      <File id="d:Miscellaneous Files/f:Tenants.html/l:C!?Personal?mCube?Tenants.html" caret="3308" fromTop="58" />
+      <File id="d:Miscellaneous Files/f:Tenants.html/l:C!?Personal?mCube?Tenants.html" caret="3645" fromTop="64" />
+      <File id="d:Miscellaneous Files/f:Landlords.html/l:C!?Personal?mCube?Landlords.html" caret="4990" fromTop="58" />
+      <File id="d:Miscellaneous Files/f:Landlords.html/l:C!?Personal?mCube?Landlords.html" caret="5327" fromTop="64" />
+      <File id="d:Miscellaneous Files/f:about.html/l:C!?Personal?mCube?about.html" caret="3625" fromTop="60" />
+      <File id="d:Miscellaneous Files/f:about.html/l:C!?Personal?mCube?about.html" caret="3962" fromTop="66" />
+      <File id="d:Miscellaneous Files/f:styles.css/l:C!?Personal?mCube?css?styles.css" caret="2921" fromTop="41" />
+      <File id="6BE661AC-B938-49B4-BC11-B8800498EF54/f:Web.config" caret="1630" fromTop="31" />
+      <File id="6BE661AC-B938-49B4-BC11-B8800498EF54/f:Web.config" caret="778" fromTop="11" />
+      <File id="A9901576-4995-4D3B-A746-47E7A11E61DE/f:app.config" caret="763" fromTop="6" />
+      <File id="d:Miscellaneous Files/f:styles.css/l:C!?Personal?mCube?css?styles.css" caret="141" fromTop="11" />
+      <File id="d:Miscellaneous Files/f:styles.css/l:C!?Personal?mCube?css?styles.css" caret="912" fromTop="28" />
+      <File id="d:Miscellaneous Files/f:styles.css/l:C!?Personal?mCube?css?styles.css" caret="416" fromTop="26" />
+      <File id="d:Miscellaneous Files/f:styles.css/l:C!?Personal?mCube?css?styles.css" caret="65" fromTop="4" />
+      <File id="d:Miscellaneous Files/f:styles.css/l:C!?Personal?mCube?css?styles.css" caret="333" fromTop="21" />
+      <File id="d:Miscellaneous Files/f:styles.css/l:C!?Personal?mCube?css?styles.css" caret="181" fromTop="14" />
+      <File id="d:Miscellaneous Files/f:styles.css/l:C!?Personal?mCube?css?styles.css" caret="333" fromTop="20" />
+      <File id="d:Miscellaneous Files/f:styles.css/l:C!?Personal?mCube?css?styles.css" caret="3066" fromTop="42" />
+      <File id="d:Miscellaneous Files/f:styles.css/l:C!?Personal?mCube?css?styles.css" caret="3005" fromTop="35" />
+      <File id="d:Miscellaneous Files/f:styles.css/l:C!?Personal?mCube?css?styles.css" caret="10612" fromTop="24" />
+      <File id="d:Miscellaneous Files/f:styles.css/l:C!?Personal?mCube?css?styles.css" caret="801" fromTop="29" />
+      <File id="d:Miscellaneous Files/f:styles.css/l:C!?Personal?mCube?css?styles.css" caret="3204" fromTop="64" />
+      <File id="d:Miscellaneous Files/f:styles.css/l:C!?Personal?mCube?css?styles.css" caret="652" fromTop="15" />
+      <File id="d:Miscellaneous Files/f:styles.css/l:C!?Personal?mCube?css?styles.css" caret="2759" fromTop="43" />
+      <File id="d:Miscellaneous Files/f:styles.css/l:C!?Personal?mCube?css?styles.css" caret="2590" fromTop="34" />
+      <File id="d:Miscellaneous Files/f:styles.css/l:C!?Personal?mCube?css?styles.css" caret="1124" fromTop="28" />
+      <File id="d:Miscellaneous Files/f:styles.css/l:C!?Personal?mCube?css?styles.css" caret="974" fromTop="18" />
+      <File id="d:Miscellaneous Files/f:styles.css/l:C!?Personal?mCube?css?styles.css" caret="2074" fromTop="30" />
+      <File id="6BE661AC-B938-49B4-BC11-B8800498EF54/d:Views/d:Home/f:Menu.aspx" caret="6237" fromTop="20" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+</Configuration>

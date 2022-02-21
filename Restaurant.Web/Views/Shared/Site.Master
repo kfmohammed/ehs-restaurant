@@ -1,0 +1,47 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<%@ Import Namespace="System.Web.Optimization" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Massala Ipswich</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="website description" />
+    <meta name="keywords" content="website keywords, website keywords" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="<%: Url.Content("~/favicon.ico") %>" rel="shortcut icon" type="image/x-icon" />
+    <%: Styles.Render("~/Content/css") %>
+    <%: Scripts.Render("~/bundles/modernizr") %>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div id="main">
+            <div id="header">
+                <div id="logo">
+                    <a href="">
+                        <img alt="Massala Ipswich" src="/Images/logos/MassalaHeader.png" /></a>
+                </div>
+            </div>
+            <div id="menu">
+                <nav>
+                    <ul class="sf-menu" id="nav">
+                        <li id="indexMenuItem"><a href="/Home/Index">Home</a></li>
+                        <li id="menuMenuItem"><a href="/Home/Menu">Menu</a></li>
+                        <!--<li id="Li1"><a href="/Home/SpecialOffers">Special Offers</a></li>-->
+						<li id="galleryMenuItem"><a href="/Home/Gallery">Gallery</a></li>
+                        <li id="contactMenuItem"><a href="/Home/Contact">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <br /><br /><br /><br />
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <br /><br />
+            <div id="footer">
+                <p style="float: left;">Copyright &copy; Massala Ipswich</p>
+                <p style="float: right;"><a href="mailto:mkfaizuddin@gmail.com">Web Design</a></p>
+            </div>
+    </div>
+</body>
+</html>
